@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Breadcrumb from './Breadcrumb';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const LeftColumn = ({meta}) => {
 
@@ -48,10 +48,22 @@ const LeftColumn = ({meta}) => {
   return(
     <div>
       <div className="block">
-      <h1 className="title is-hidden-mobile">{whichMeta}</h1>
+        <h1 className="title is-hidden-mobile">{whichMeta}</h1>
       </div>
       <div className="block">
-      <p>{text}</p>
+        <p className="bio_body">
+          <TransitionGroup>
+            <CSSTransition 
+              key={meta}
+              timeout={1000}
+              classNames="biochange"
+              >
+              <div>
+                {text}
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+          </p>
       </div>
     </div>
   )

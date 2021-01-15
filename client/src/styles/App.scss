@@ -2,6 +2,11 @@
 @import "./variables.scss";
 @import "../../node_modules/bulma/bulma.sass";
 
+@keyframes bio_text {
+  0% {opacity:0;}
+  100% {opacity: 1;}
+}
+
 .App {
   background: radial-gradient(farthest-corner at 0px 15px, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $earthOne);
   min-height: 100vh;
@@ -10,10 +15,14 @@
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.5em;
+  
 }
 
 div.columns {
   min-height: 60vh;
+  animation: first-animation 1.5s, another-animation 1s;
+  animation-name: bio_text;
+  animation-duration: 1.5s;
 }
 
 button.button.is-rounded {
@@ -27,9 +36,37 @@ nav.level {
 footer.footer {
   position: absolute;
   bottom: 0;
-
 }
 
 img.image.is-rounded {
   filter: drop-shadow(7px 3px 7px $earthOne);
+}
+
+p.bio_body {
+  color: whitesmoke;
+  animation: first-animation 1.5s, another-animation 1s;
+  animation-name: bio_text;
+  animation-duration: 1.5s;
+}
+
+
+/* starting ENTER animation */
+.biochange-enter {
+  opacity: 0;
+}
+
+/* ending ENTER animation */
+.biochange-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease-in-out;
+}
+
+/* starting EXIT animation */
+.biochange-exit {
+  opacity: 1;
+}
+
+/* ending EXIT animation */
+.biochange-exit-active {
+  opacity: 0;
 }
