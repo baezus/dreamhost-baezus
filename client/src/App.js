@@ -28,22 +28,22 @@ function App() {
       <div className="field is-grouped">
           <p className="control">
               <button 
-              className="button is-rounded is-large is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-6-mobile" 
               onClick={()=>{setMeta('general')}}>general</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-large is-size-6-mobile"
+              className="button is-rounded is-medium is-size-6-mobile"
               onClick={()=> {setMeta('poetry')}}>poetry</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-large is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-6-mobile" 
               onClick={() => {setMeta('journalism')}}>journalism</button> 
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-large is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-6-mobile" 
               onClick={() => {setMeta('programming')}}>programming</button>
             </p>
       </div>

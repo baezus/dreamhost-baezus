@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Breadcrumb from './Breadcrumb';
 
 const LeftColumn = ({meta}) => {
 
@@ -30,7 +31,7 @@ const LeftColumn = ({meta}) => {
         console.log('programming bio set');
         break;
       default:
-        setText('wack');
+        setText(generalBio);
         break;
     }
   }

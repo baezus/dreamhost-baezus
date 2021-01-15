@@ -1,14 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Breadcrumb = (props) => {
+
+const Breadcrumb = ({meta}) => {
+
+  const [whichOne, setWhichOne] = useState(meta);
+  const [ulArray, setUlArray] = useState(['github','linkedin','instagram'])
+  const [ulLinks, setUlLinks] = useState(['//www.github.com/baezus', '//www.linkedin.com/in/baezus/', '//www.instagram.com/baez.us/?hl=en']);
+
+  const metaValue = () => {
+    let trueValue = meta;
+    switch (trueValue) {
+      case 'general':
+        setUlArray(['github','linkedin','instagram'])
+        setUlLinks(['//www.github.com/baezus', '//www.linkedin.com/in/baezus/', '//www.instagram.com/baez.us/?hl=en'])
+        break;
+      case 'poetry':
+        setUlArray(['Miss Bay & The Parasite','I wanna tutor Katy Perry','The Demon Star'])
+        setUlLinks(['//www.nocontactmag.com/miss-bay-the-parasite', '//issuu.com/chris_talbot/docs/bkvol11issue4fall/s/11050728', '//rougarou.org/the-demon-star-a-locket-for-algol/'])
+        break;
+      case 'journalism':
+        setUlArray(['Jericho Brown','Shamir','Tegan & Sara']);
+        setUlLinks(['//gayletter.com/jericho-brown/','//gayletter.com/shamir/','//gayletter.com/tegan-and-sara/']);
+        break;
+      case 'programming':
+        setUlArray(['Portfolio']);
+        setUlLinks(['//baez.us']);
+        break;
+      default:
+    }
+  };
+
+  useEffect(() => {
+    const newMeta = metaValue();
+    setWhichOne(newMeta)
+  }, [meta])
 
   return (
     <>
-      <nav className="breadcrumb is-right" aria-label="breadcrumbs">
+      <nav className="breadcrumb" aria-label="breadcrumbs">
         <ul className="metaBio_links is-hidden-mobile">
-          <li><a href={'https://github.com/baezus'} className="is-size-5" target="_blank">GitHub</a></li>
-          <li><a href={'https://www.linkedin.com/in/baezus'} className="is-size-5" target="_blank">LinkedIn</a></li>
-          <li><a href={'https://twitter.com/baez_us'} className="is-size-5" target="_blank">Twitter</a></li>
+          <li><a 
+          href={ulLinks[0]} 
+          className="is-size-6" 
+          target="_blank"
+          rel="noreferrer">{ulArray[0]}</a></li>
+          <li><a 
+          href={ulLinks[1]} 
+          className="is-size-6" 
+          target="_blank"
+          rel="noreferrer">{ulArray[1]}</a></li>
+          <li><a href={ulLinks[2]}
+          className="is-size-6" 
+          target="_blank"
+          rel="noreferrer">{ulArray[2]}</a></li>
         </ul>
       </nav>
     </>

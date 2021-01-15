@@ -7,13 +7,16 @@ const RightColumn = ({meta}) => {
   return(
     <div>
       <div className="block">
-        <p>And here's some {meta} information.</p>
+        <p>{meta}</p>
       </div>
       <div className="block">
-        <Picture/>
+        <Picture meta={meta}/>
       </div>
       <div className="block">
-        <Breadcrumb/>
+        <Breadcrumb meta={meta}/>
+      </div>
+      <div className="block">
+        
       </div>
     </div>
   )
