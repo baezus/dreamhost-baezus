@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
 
   return (
-    <nav className="level">
+    <nav className="level is-mobile">
       <div className="level-left">
         <div className="level-item">
           elias baez

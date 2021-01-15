@@ -5,9 +5,9 @@ import Picture from './Picture';
 const RightColumn = ({meta}) => {
 
   return(
-    <div className="is-hidden-mobile">
+    <div>
       <div className="block">
-        <p>{meta}</p>
+        <p className="is-hidden-tablet is-capitalized">{meta}</p>
       </div>
       <div className="block">
         <Picture meta={meta}/>

@@ -48,7 +48,7 @@ const LeftColumn = ({meta}) => {
   return(
     <div>
       <div className="block">
-      <h1 className="title">{whichMeta}</h1>
+      <h1 className="title is-hidden-mobile">{whichMeta}</h1>
       </div>
       <div className="block">
       <p>{text}</p>

@@ -6,7 +6,7 @@ import RightColumn from './components/RightColumn';
 
 function App() {
 
-  const [meta, setMeta] = useState('welcome');
+  const [meta, setMeta] = useState('Welcome');
   const [text, setText] = useState('')
 
   return (
@@ -24,26 +24,26 @@ function App() {
         </div>
         </div>
       </div>
-      <footer className="footer">
+      <footer className="footer is-pulled-left">
       <div className="field is-grouped">
           <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-7-mobile" 
               onClick={()=>{setMeta('general')}}>general</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile"
+              className="button is-rounded is-medium is-size-7-mobile"
               onClick={()=> {setMeta('poetry')}}>poetry</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-7-mobile" 
               onClick={() => {setMeta('journalism')}}>journalism</button> 
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-7-mobile" 
               onClick={() => {setMeta('programming')}}>programming</button>
             </p>
       </div>
