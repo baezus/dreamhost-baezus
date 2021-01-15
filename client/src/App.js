@@ -6,9 +6,7 @@ function App() {
       <nav className="level">
         <div className="level-left">
           <div className="level-item">
-            <p className="subtitle is-5">
-              <strong>elias baez</strong>
-            </p>
+             elias baez
           </div>
         </div>
         <div className="level-right">
@@ -22,9 +20,17 @@ function App() {
           First Column
         </div>
         <div className="column is-half">
-          Second Column
+          Second
         </div>
       </div>
+
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <p>
+            About / Programming / Poetry / Journalism
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

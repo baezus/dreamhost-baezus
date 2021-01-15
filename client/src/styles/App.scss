@@ -3,9 +3,22 @@
 @import "../../node_modules/bulma/bulma.sass";
 
 .App {
-  background: radial-gradient(farthest-corner at 0px 15px, $grass, $grass, $grass, $grass, $grass, $grass, $skyTwo);
+  background: radial-gradient(farthest-corner at 0px 15px, $skyOne, $skyOne, $skyOne, $skyOne, $skyOne, $skyOne, $skyOne, $skyThree);
   min-height: 100vh;
   font-weight: 600;
   font-size: 30px;
+  padding: 1.5rem;
 }
 
+div.columns {
+  min-height: 60vh;
+}
+
+nav.level {
+  color: $fireThree;
+}
+
+footer.footer {
+  position: absolute;
+
+}
