@@ -37,11 +37,11 @@ const Breadcrumb = ({meta}) => {
 
   return (
     <>
-      <nav className="breadcrumb is-right " aria-label="breadcrumbs">
+      <nav className="breadcrumb is-right has-bullet-separator" aria-label="breadcrumbs">
         <ul className="metaBio_links">
           <li><a 
           href={ulLinks[0]} 
-          className="is-size-5" 
+          className="is-size-5 is-active" 
           target="_blank"
           rel="noreferrer">{ulArray[0]}</a></li>
           <li><a 
@@ -53,6 +53,7 @@ const Breadcrumb = ({meta}) => {
           className="is-size-5" 
           target="_blank"
           rel="noreferrer">{ulArray[2]}</a></li>
+          
         </ul>
       </nav>
     </>

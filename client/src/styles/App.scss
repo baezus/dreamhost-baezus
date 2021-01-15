@@ -61,6 +61,8 @@ button.button.is-rounded.is-size-5-mobile.is-pulled-right {
   color: $three;
   font-size: 1.10em;
   display: block;
+  text-shadow: -1px -1px 10px $five;
+
 }
 
 button.button.is-rounded.is-size-5-mobile.is-pulled-right:hover {
@@ -73,6 +75,7 @@ a.is-size-5 {
   text-shadow: 4px 4px 8px $one;
   font-weight: xx-large;
   font-size: larger;
+
 }
 
 a.is-size-5:hover {
