@@ -3,7 +3,7 @@ import Breadcrumb from './Breadcrumb';
 
 const LeftColumn = ({meta}) => {
 
-  const [whichMeta, setWhichMeta] = useState(meta);
+  const [whichMeta, setWhichMeta] = useState('Welcome');
   const [text, setText] = useState('');
 
   const generalBio = "I'm from New York and I live in Baltimore.";
@@ -16,18 +16,22 @@ const LeftColumn = ({meta}) => {
     switch(meta) {
       case 'general':
         setText(generalBio);
+        setWhichMeta('General');
         console.log('general bio set');
         break;
       case 'poetry':
         setText(poetryBio);
+        setWhichMeta('Poetry');
         console.log('poetry bio set');
         break;
       case 'journalism':
         setText(journalismBio);
+        setWhichMeta('Journalism');
         console.log('journalism bio set');
         break;
       case 'programming':
         setText(programmingBio);
+        setWhichMeta('Programming');
         console.log('programming bio set');
         break;
       default:
@@ -38,12 +42,17 @@ const LeftColumn = ({meta}) => {
 
   useEffect(() => {
     const nextMeta = decideWhich();
-    setWhichMeta(nextMeta);
+    // setWhichMeta(nextMeta);
   }, [meta])
 
   return(
     <div>
+      <div className="block">
+      <h1 className="title">{whichMeta}</h1>
+      </div>
+      <div className="block">
       <p>{text}</p>
+      </div>
     </div>
   )
 

@@ -5,7 +5,7 @@ import Picture from './Picture';
 const RightColumn = ({meta}) => {
 
   return(
-    <div>
+    <div className="is-hidden-mobile">
       <div className="block">
         <p>{meta}</p>
       </div>
@@ -16,7 +16,7 @@ const RightColumn = ({meta}) => {
         <Breadcrumb meta={meta}/>
       </div>
       <div className="block">
-        
+
       </div>
     </div>
   )
