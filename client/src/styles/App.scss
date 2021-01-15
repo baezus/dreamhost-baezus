@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "./variables.scss";
+@import "../../node_modules/bulma/bulma.sass";
+
+.App {
+  background: radial-gradient(farthest-corner at 0px 15px, $grass, $grass, $grass, $grass, $grass, $grass, $skyTwo);
+  min-height: 100vh;
+  font-weight: 600;
+  font-size: 30px;
+}
+
