@@ -15,7 +15,21 @@ $grass: #3e6958;
 $link: $fireTwo;
 
 //Customizing Variables
-$column-gap: 0.35rem;
+$column-gap: 0.65rem;
 $body-color: whitesmoke;
 $footer-background-color: transparent;
-$footer-padding: 1.5rem .75rem 3rem;
+$footer-padding: 2.5rem .75rem 3rem;
+$font: 'Varta', sans-serif;
+
+
+$button-color: $fireOne;
+$button-background-color: transparent;
+$button-border-color: transparent;
+$button-border-width: .20rem;
+$button-hover-color: $earthThree;
+$button-hover-border-color: transparent;
+$button-focus-color: $skyTwo;
+$button-focus-border-color: transparent;
+$button-focus-box-shadow-size: 0;
+$button-active-color: $skyThree;
+$button-active-border-color: transparent;

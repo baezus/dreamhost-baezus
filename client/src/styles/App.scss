@@ -8,10 +8,15 @@
   font-weight: 600;
   font-size: 1.5em;
   padding: 1.5rem;
+  
 }
 
 div.columns {
   min-height: 60vh;
+}
+
+button.button.is-rounded {
+  font-weight: 700;
 }
 
 nav.level {

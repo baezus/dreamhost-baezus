@@ -11,18 +11,21 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <div className="block">
+        <Header/>
+      </div>
+      <div className="block">
       <div className="columns">
-        <div className="column is-two-thirds">
+        <div className="column is-three-fifths">
           <LeftColumn meta={meta}/>
         </div>
-        <div className="column">
+        <div className="column is-one-third">
           <RightColumn meta={meta}/>
+        </div>
         </div>
       </div>
       <footer className="footer">
-      <div className="content has-text-centered">
-        
+      <div className="field is-grouped">
           <p className="control">
               <button 
               className="button is-rounded is-large is-size-6-mobile" 
@@ -43,7 +46,6 @@ function App() {
               className="button is-rounded is-large is-size-6-mobile" 
               onClick={() => {setMeta('programming')}}>programming</button>
             </p>
-        
       </div>
     </footer>
     </div>

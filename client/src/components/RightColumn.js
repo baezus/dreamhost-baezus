@@ -2,12 +2,12 @@ import React from 'react';
 import Breadcrumb from './Breadcrumb';
 import Picture from './Picture';
 
-const RightColumn = (props) => {
+const RightColumn = ({meta}) => {
 
   return(
     <div>
       <div className="block">
-        <p>And here's some meta information.</p>
+        <p>And here's some {meta} information.</p>
       </div>
       <div className="block">
         <Picture/>
