@@ -10,12 +10,12 @@
 .App {
   background: radial-gradient(farthest-corner at 0px 15px, $one, $one, $one, $one, $ten, $one, $one);
   min-height: 100vh;
-  min-width: 100wh;
+  min-width: 100vw;
   font-weight: 600;
   font-size: 1.25em;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  padding-top: 1.5em;
+  padding-top: .5em;
   display: inline-block;
 }
 
@@ -25,6 +25,7 @@ div.columns {
   animation-name: bio_text;
   animation-duration: 1s;
   margin-top: .3em;
+  flex-direction: column-wrap;
 }
 
 h1 {
@@ -90,6 +91,15 @@ button.button.is-rounded.is-hidden-mobile.is-pulled-right.grow:hover {
   -webkit-transform: scale(1.5) translateX(-.50em) translateY(-.75em);
   -ms-transform: scale(1.5) translateX(-.50em) translateY(-.75em);
   transform: scale(1.5) translateX(-.50em) translateY(-.75em);
+}
+
+button.button.is-rounded.is-hidden-mobile.is-pulled-right.grow:focus {
+  color: $three;
+  text-shadow: -5px -3px 5px $three;
+  filter: drop-shadow(5px 5px 20px $one);
+  -webkit-transform: scale(2.1) translateX(-.50em) translateY(-.75em);
+  -ms-transform: scale(2.1) translateX(-.50em) translateY(-.75em);
+  transform: scale(2.1) translateX(-.50em) translateY(-.75em);
   
 }
 
@@ -123,18 +133,18 @@ nav.breadcrumb {
 }
 
 footer.footer {
-  // display: inline-block;
+  display: inline-block;
   position: absolute;
-  bottom: 2em;
+  bottom: 3em;
   left: 0;
 }
 
 article.message.is-small {
   display: block;
   position: absolute;
-  bottom: 20em;
-  max-width: 55%;
-  min-height: 15%;
+  bottom: 18em;
+  max-width: 45%;
+  min-height: 10%;
   text-shadow: 2px 2px $one;
   font-weight: large;
 }
