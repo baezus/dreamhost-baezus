@@ -50,8 +50,11 @@ function App() {
               className="button is-rounded is-medium is-size-5-mobile"
               onClick={()=> {setMeta('poetry')}}>poetry</button>
             </p>
+            
       </div>
     </footer>
+    <button 
+            className="button is-rounded is-medium is-size-5-mobile is-pulled-right">elias@baez.us</button>
     </div>
   );
 }

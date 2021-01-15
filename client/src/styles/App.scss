@@ -54,6 +54,16 @@ button.button.is-rounded:focus {
   text-shadow: 3px 2px 6px $five;
 }
 
+button.button.is-rounded.is-size-5-mobile.is-pulled-right {
+  position: absolute;
+  bottom: 1.5em;
+  right: 1em;
+  color: $three;
+  font-weight: 400;
+  font-size: 1.25em;
+  display: block;
+}
+
 a.is-size-5 {
   text-shadow: 4px 4px 8px $one;
   font-weight: xx-large;
