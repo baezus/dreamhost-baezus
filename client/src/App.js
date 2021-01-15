@@ -26,19 +26,15 @@ function App() {
       </div>
       <footer className="footer">
       <div className="field is-grouped">
-          <p className="control">
-            <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
-              onClick={() => {setMeta('welcome')}}>welcome</button>
-          </p>
+         
           <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
-              onClick={()=>{setMeta('about')}}>about</button>
+              className="button is-rounded is-medium is-size-5-mobile" 
+              onClick={()=>{setMeta('about')}}>about me</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-5-mobile" 
               onClick={() => {setMeta('programming')}}>programming</button>
             </p>
 
@@ -46,12 +42,12 @@ function App() {
             <div className="field is-grouped">
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile" 
+              className="button is-rounded is-medium is-size-5-mobile" 
               onClick={() => {setMeta('journalism')}}>journalism</button> 
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-6-mobile"
+              className="button is-rounded is-medium is-size-5-mobile"
               onClick={()=> {setMeta('poetry')}}>poetry</button>
             </p>
       </div>

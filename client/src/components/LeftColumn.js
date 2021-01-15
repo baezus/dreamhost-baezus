@@ -66,7 +66,7 @@ const LeftColumn = ({meta}) => {
               timeout={1000}
               classNames="biochange"
               >
-              <div>
+              <div className="is-size-6-mobile">
                 {text}
               </div>
             </CSSTransition>
@@ -76,7 +76,7 @@ const LeftColumn = ({meta}) => {
       <div className="block">
         </div>
         <article className="message is-small is-hidden-mobile">
-          <div className="message-body is-size-5">
+          <div className="message-body is-size-5 is-clickable">
           Getting to this point with {meta} was the hardest experience of my life, no doubt.
           </div>
         </article>

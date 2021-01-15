@@ -37,6 +37,10 @@ div.level-item {
   color: transparent;
 }
 
+div.message-body.is-size-5.is-clickable:hover {
+  text-shadow: 1px 1px 5px $five;
+}
+
 button.button.is-rounded {
   font-weight: 800;
   text-shadow: 3px 2px 6px $five;
@@ -74,7 +78,7 @@ footer.footer {
 article.message.is-small {
   display: block;
   position: absolute;
-  bottom: 15em;
+  bottom: 13em;
   max-width: 60%;
   min-height: 25%;
   text-shadow: 2px 2px $one;
