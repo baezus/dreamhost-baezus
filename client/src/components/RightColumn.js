@@ -7,7 +7,7 @@ const RightColumn = ({meta}) => {
   return(
     <div>
       <div className="block">
-        <p className="is-hidden-tablet is-capitalized">{meta}</p>
+        <p className="is-hidden-mobile is-hidden-tablet is-capitalized">{meta}</p>
       </div>
       <div className="block">
         <Picture meta={meta}/>
