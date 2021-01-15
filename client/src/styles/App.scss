@@ -10,6 +10,7 @@
 .App {
   background: radial-gradient(farthest-corner at 0px 15px, $one, $one, $one, $one, $ten, $one, $one);
   min-height: 100vh;
+  min-width: 100wh;
   font-weight: 600;
   font-size: 1.25em;
   padding-left: 1.5em;
@@ -75,7 +76,7 @@ button.button.is-rounded.is-hidden-mobile.is-pulled-right {
   color: $three;
   font-size: 1.10em;
   display: block;
-  text-shadow: -3px 5px 15px $five;
+  text-shadow: -4px 6px 18px $five;
   -webkit-transition: .75s ease-in-out;
   -moz-transition: .75s ease-in-out;
   -o-transition: .75s ease-in-out;

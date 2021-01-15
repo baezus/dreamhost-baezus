@@ -31,7 +31,7 @@ function App() {
       
               <button 
               className="button is-rounded is-large is-size-5-mobile" 
-              onClick={() => {setMeta('journalism')}}>pop writing</button> 
+              onClick={() => {setMeta('journalism')}}>pop & culture</button> 
             
               <button 
               className="button is-rounded is-large is-size-5-mobile"
@@ -41,7 +41,7 @@ function App() {
 
     <article className="message is-small is-hidden-mobile">
           <div className="message-body is-size-6 is-clickable">
-          To read more about me personally, click:<br/> 
+          To read more about my background and my career transition:<br/> 
           <button 
               className="button is-rounded is-size-5-mobile" 
               onClick={()=>{setMeta('about')}}>About Me</button>

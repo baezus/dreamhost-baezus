@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-const welcomeMessage = `Thank you for stopping by. I'm an early career full stack Software Engineer specializing in React and Node.js. I also write poetry and pop journalism. Click a career path below to find more about my work in it.`
+const welcomeMessage = `Thank you for taking the time to look at my work. I'm an early career software engineer specializing in React, Node.js, and virtual computing. I also write poetry and pop culture journalism. These fields appear divergent, but by my lights they're all about the same thing: refining inefficiencies out of language so a message can travel farther and do more. Follow a yellow word to see what I've produced.`
 
 const LeftColumn = ({meta}) => {
 
