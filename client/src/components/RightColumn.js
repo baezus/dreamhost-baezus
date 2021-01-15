@@ -2,13 +2,19 @@ import React from 'react';
 import Breadcrumb from './Breadcrumb';
 import Picture from './Picture';
 
-const RightColumn = () => {
+const RightColumn = (props) => {
 
   return(
     <div>
-      <p>And here's some meta information.</p>
-      <Picture/>
-      <Breadcrumb/>
+      <div className="block">
+        <p>And here's some meta information.</p>
+      </div>
+      <div className="block">
+        <Picture/>
+      </div>
+      <div className="block">
+        <Breadcrumb/>
+      </div>
     </div>
   )
 
