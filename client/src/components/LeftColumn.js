@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-const welcomeMessage = `Hi, my name is Elias Baez. I'm a Full Stack Software Engineer and a writer of poetry and pop journalism. Welcome to my website. The buttons below toggle information for you, and the links below my picture will take you off-site to examples of my work.`
+const welcomeMessage = `I'm a Full Stack Software Engineer and a writer of poetry and pop journalism. Welcome to my website. The buttons below toggle information for you, and the links below my picture will take you off-site to examples of my work.`
 
 const LeftColumn = ({meta}) => {
 
-  const [whichMeta, setWhichMeta] = useState('Welcome');
+  const [whichMeta, setWhichMeta] = useState(`Hi, I'm Elias Baez.`);
   const [text, setText] = useState(welcomeMessage);
 
   

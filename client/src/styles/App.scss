@@ -25,21 +25,29 @@ div.columns {
   animation-duration: 1.5s;
 }
 
+h1 {
+  text-shadow: 4px 3px 8px $five;
+}
+
+h1:hover {
+  text-shadow: 8px 6px 16px $five;
+}
+
 div.level-item {
   color: transparent;
 }
 
 button.button.is-rounded {
   font-weight: 800;
-  text-shadow: 4px 3px 8px $five;
+  text-shadow: 3px 2px 6px $five;
 }
 
 button.button.is-rounded:hover {
-  text-shadow: 4px 3px 8px $five;
+  text-shadow: 3px 2px 6px $five;
 }
 
 button.button.is-rounded:focus {
-  text-shadow: 4px 3px 8px $five;
+  text-shadow: 3px 2px 6px $five;
 }
 
 a.is-size-5 {
@@ -73,8 +81,12 @@ article.message.is-small {
   font-weight: x-large;
 }
 
-img.image.is-rounded {
+img.image.is-rounded.is-clickable {
   filter: drop-shadow(18px 7px 25px $one);
+}
+
+img.image.is-rounded.is-clickable:hover {
+  filter: drop-shadow(18px 7px 27px $one);
 }
 
 p.bio_body {
