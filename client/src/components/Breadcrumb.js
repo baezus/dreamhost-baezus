@@ -41,16 +41,16 @@ const Breadcrumb = ({meta}) => {
         <ul className="metaBio_links">
           <li><a 
           href={ulLinks[0]} 
-          className="is-size-6" 
+          className="is-size-5" 
           target="_blank"
           rel="noreferrer">{ulArray[0]}</a></li>
           <li><a 
           href={ulLinks[1]} 
-          className="is-size-6" 
+          className="is-size-5" 
           target="_blank"
           rel="noreferrer">{ulArray[1]}</a></li>
           <li><a href={ulLinks[2]}
-          className="is-size-6" 
+          className="is-size-5" 
           target="_blank"
           rel="noreferrer">{ulArray[2]}</a></li>
         </ul>

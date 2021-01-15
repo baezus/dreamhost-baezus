@@ -76,7 +76,7 @@ const LeftColumn = ({meta}) => {
       <div className="block">
         </div>
         <article className="message is-small is-hidden-mobile">
-          <div className="message-body is-size-6">
+          <div className="message-body is-size-5">
           Getting to this point with {meta} was the hardest experience of my life, no doubt.
           </div>
         </article>
