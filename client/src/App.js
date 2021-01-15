@@ -54,7 +54,7 @@ function App() {
       </div>
     </footer>
     <button 
-            className="button is-rounded is-medium is-size-5-mobile is-pulled-right">elias@baez.us</button>
+            className="button is-rounded is-medium is-size-5-mobile is-pulled-right grow">elias@baez.us</button>
     </div>
   );
 }
