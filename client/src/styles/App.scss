@@ -38,8 +38,12 @@ button.button.is-rounded:focus {
   text-shadow: 3px 1px $five;
 }
 
-a.is-size-6 {
-  text-shadow: 1px 2px $five;
+a.is-size-5 {
+  text-shadow: 3px 3px $five;
+}
+
+a.is-size-5:hover {
+  text-shadow: 3px 3px $five;
 }
 
 nav.level {
@@ -61,7 +65,7 @@ article.message.is-small {
 }
 
 img.image.is-rounded {
-  filter: drop-shadow(7px 3px 7px $one);
+  filter: drop-shadow(18px 7px 25px $one);
 }
 
 p.bio_body {
