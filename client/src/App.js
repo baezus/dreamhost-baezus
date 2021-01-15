@@ -25,18 +25,13 @@ function App() {
         </div>
       </div>
       <footer className="footer">
-
               <button 
               className="button is-rounded is-large is-size-5-mobile" 
-              onClick={()=>{setMeta('about')}}>about me</button>
-          
-              <button 
-              className="button is-rounded is-large is-size-5-mobile" 
-              onClick={() => {setMeta('programming')}}>programming</button>
+              onClick={() => {setMeta('programming')}}>coding</button>
       
               <button 
               className="button is-rounded is-large is-size-5-mobile" 
-              onClick={() => {setMeta('journalism')}}>journalism</button> 
+              onClick={() => {setMeta('journalism')}}>pop writing</button> 
             
               <button 
               className="button is-rounded is-large is-size-5-mobile"
@@ -45,13 +40,16 @@ function App() {
     </footer>
 
     <article className="message is-small is-hidden-mobile">
-          <div className="message-body is-size-5 is-clickable">
-          I understand that this looks like a loading screen from the Nintendo 64 underrated classic Jet Force Gemini. I don't mind.
+          <div className="message-body is-size-6 is-clickable">
+          To read more about me personally, click:<br/> 
+          <button 
+              className="button is-rounded is-size-5-mobile" 
+              onClick={()=>{setMeta('about')}}>About Me</button>
           </div>
         </article>
 
     <button 
-            className="button is-rounded is-medium is-size-5-mobile is-pulled-right grow">elias@baez.us</button>
+            className="button is-rounded is-medium is-hidden-mobile is-pulled-right grow">elias@baez.us</button>
     </div>
   );
 }
