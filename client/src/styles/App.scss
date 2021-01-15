@@ -8,7 +8,7 @@
 }
 
 .App {
-  background: radial-gradient(farthest-corner at 0px 15px, $one, $one, $one, $one, $three, $one, $one);
+  background: radial-gradient(farthest-corner at 0px 15px, $one, $one, $one, $one, $ten, $one, $one);
   min-height: 100vh;
   font-weight: 600;
   font-size: 1.25em;
@@ -27,23 +27,25 @@ div.columns {
 
 button.button.is-rounded {
   font-weight: 800;
-  text-shadow: 2px 1px $five;
+  text-shadow: 2px 2px $five;
 }
 
 button.button.is-rounded:hover {
-  text-shadow: 3px 2px $five;
+  text-shadow: 2px 2px $five;
 }
 
 button.button.is-rounded:focus {
-  text-shadow: 3px 1px $five;
+  text-shadow: 2px 1px $five;
 }
 
 a.is-size-5 {
-  text-shadow: 3px 3px $five;
+  text-shadow: 2px 2px $five;
+  font-weight: x-large;
 }
 
 a.is-size-5:hover {
-  text-shadow: 3px 3px $five;
+  text-shadow: 2px 2px $five;
+  font-weight: x-large;
 }
 
 nav.level {
@@ -62,6 +64,8 @@ article.message.is-small {
   bottom: 15em;
   max-width: 60%;
   min-height: 25%;
+  text-shadow: 2px 2px $one;
+  font-weight: x-large;
 }
 
 img.image.is-rounded {

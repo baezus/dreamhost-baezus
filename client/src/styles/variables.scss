@@ -17,7 +17,7 @@ $body-color: $four;
 $title-color: $two;
 $footer-background-color: transparent;
 $footer-padding: 1rem .25rem 2rem;
-$font: 'Varta', sans-serif;
+$family-sans-serif: 'Rubik', sans-serif;
 
 
 //buttons
@@ -36,8 +36,8 @@ $button-active-border-color: transparent;
 //message box
 $message-background-color: transparent;
 $message-radius: 10px;
-$message-body-color: $four;
-$message-body-border-color: $two;
+$message-body-color: $seven;
+$message-body-border-color: $three;
 
 //breadcrumbs
 $link: $four;
@@ -47,5 +47,5 @@ $link-focus: $one;
 $link-focus-border: $one;
 $link-active: $ten;
 $link-active-border: $eleven;
-$breadcrumb-item-color: $four;
+$breadcrumb-item-color: $eight;
 $breadcrumb-item-hover-color: $two;
