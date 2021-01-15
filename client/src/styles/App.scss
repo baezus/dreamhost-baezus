@@ -34,8 +34,17 @@ nav.level {
 }
 
 footer.footer {
+  display: block;
   position: absolute;
   bottom: 0;
+}
+
+article.message.is-small {
+  display: block;
+  position: absolute;
+  bottom: 15em;
+  max-width: 60%;
+  min-height: 25%;
 }
 
 img.image.is-rounded {

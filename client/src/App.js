@@ -19,12 +19,12 @@ function App() {
         <div className="column is-three-fifths">
           <LeftColumn meta={meta}/>
         </div>
-        <div className="column is-one-third">
+        <div className="column is-two-fifths">
           <RightColumn meta={meta}/>
         </div>
         </div>
       </div>
-      <footer className="footer is-pulled-left">
+      <footer className="footer">
       <div className="field is-grouped">
           <p className="control">
             <button 

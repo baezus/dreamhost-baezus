@@ -37,7 +37,7 @@ const Breadcrumb = ({meta}) => {
 
   return (
     <>
-      <nav className="breadcrumb" aria-label="breadcrumbs">
+      <nav className="breadcrumb is-right" aria-label="breadcrumbs">
         <ul className="metaBio_links">
           <li><a 
           href={ulLinks[0]} 

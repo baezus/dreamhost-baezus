@@ -15,7 +15,7 @@ $grass: #3e6958;
 $link: $fireTwo;
 
 //Customizing Variables
-$column-gap: 0.65rem;
+$column-gap: 1.5em;
 $body-color: whitesmoke;
 $title-color: whitesmoke;
 $footer-background-color: transparent;
@@ -23,6 +23,7 @@ $footer-padding: 1rem .25rem 2rem;
 $font: 'Varta', sans-serif;
 
 
+//buttons
 $button-color: $fireOne;
 $button-background-color: transparent;
 $button-border-color: transparent;
@@ -34,3 +35,9 @@ $button-focus-border-color: transparent;
 $button-focus-box-shadow-size: 0;
 $button-active-color: $skyThree;
 $button-active-border-color: transparent;
+
+//message box
+$message-background-color: transparent;
+$message-radius: 10px;
+$message-body-color: $earthFour;
+$message-body-border-color: $earthTwo;

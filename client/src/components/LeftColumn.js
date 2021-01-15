@@ -9,9 +9,9 @@ const LeftColumn = ({meta}) => {
   const [text, setText] = useState(welcomeMessage);
 
   
-  const generalBio = "I'm from New York and I live in Baltimore.";
-  const poetryBio = "Elias Baez is a poet, editor, and programmer living in Baltimore. He earned his MFA in Poetry from Johns Hopkins University in 2020, and has work in Mantis, No Contact, The Bitchin Kitsch, Rougarou, and forthcoming in Cobra Milk.";
-  const journalismBio = "I've been working with GAYLETTER since 2016.";
+  const generalBio = "I'm from New York and I live in Baltimore, now.";
+  const poetryBio = "I earned my MFA in Poetry from Johns Hopkins University in 2020, and have work in Mantis, No Contact, The Bitchin Kitsch, Rougarou, and forthcoming in Cobra Milk.";
+  const journalismBio = "I started working with @GAYLETTER four years ago, just writing online abt artists I liked. No matter how bad the world was being, this is a place where I was safe to grow. Interviewing @shamir326 was a moment last year that brought me pride in my work. I’m grateful for these opportunities, and excited to keep sharing what comes of them with u. .";
   const programmingBio = "Site designed using React, Sass, Bulma, and a Node.js backend.";
 
   const decideWhich = () => {
@@ -56,7 +56,7 @@ const LeftColumn = ({meta}) => {
   return(
     <div>
       <div className="block">
-        <h1 className="title is-hidden-mobile">{whichMeta}</h1>
+        <h1 className="title is-hidden-mobile is-clickable">{whichMeta}</h1>
       </div>
       <div className="block">
         <p className="bio_body">
@@ -73,6 +73,14 @@ const LeftColumn = ({meta}) => {
           </TransitionGroup>
           </p>
       </div>
+      <div className="block">
+        </div>
+        <article className="message is-small is-hidden-mobile">
+          <div className="message-body is-size-6">
+          Getting to this point with {meta} was the hardest experience of my life, no doubt.
+          </div>
+        </article>
+   
     </div>
   )
 
