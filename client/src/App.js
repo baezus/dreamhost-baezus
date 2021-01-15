@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Header/>
       <div className="columns">
-        <div className="column is-half">
+        <div className="column is-two-thirds">
           <LeftColumn/>
         </div>
-        <div className="column is-half">
+        <div className="column">
           <RightColumn/>
         </div>
       </div>

@@ -3,7 +3,7 @@
 @import "../../node_modules/bulma/bulma.sass";
 
 .App {
-  background: radial-gradient(farthest-corner at 0px 15px, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $earthTwo);
+  background: radial-gradient(farthest-corner at 0px 15px, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $earthOne);
   min-height: 100vh;
   font-weight: 600;
   font-size: 1.5em;
@@ -21,4 +21,8 @@ nav.level {
 footer.footer {
   position: absolute;
 
+}
+
+img.image.is-rounded {
+  filter: drop-shadow(7px 3px 7px $earthOne);
 }
