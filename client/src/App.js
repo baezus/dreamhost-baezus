@@ -1,5 +1,8 @@
 import './styles/App.scss';
 import Header from './components/Header';
+import LeftColumn from './components/LeftColumn';
+import RightColumn from './components/RightColumn';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -7,20 +10,13 @@ function App() {
       <Header/>
       <div className="columns">
         <div className="column is-half">
-          First Column
+          <LeftColumn/>
         </div>
         <div className="column is-half">
-          Second
+          <RightColumn/>
         </div>
       </div>
-
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
-            About / Programming / Poetry / Journalism
-          </p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
