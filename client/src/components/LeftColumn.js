@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
+const welcomeMessage = `Hi, my name is Elias Baez. I'm a Full Stack Software Engineer and a writer of poetry and pop journalism. Welcome to my website. The buttons below toggle information for you, and the links below my picture will take you off-site to examples of my work.`
+
 const LeftColumn = ({meta}) => {
 
   const [whichMeta, setWhichMeta] = useState('Welcome');
-  const [text, setText] = useState('');
+  const [text, setText] = useState(welcomeMessage);
 
+  
   const generalBio = "I'm from New York and I live in Baltimore.";
   const poetryBio = "Elias Baez is a poet, editor, and programmer living in Baltimore. He earned his MFA in Poetry from Johns Hopkins University in 2020, and has work in Mantis, No Contact, The Bitchin Kitsch, Rougarou, and forthcoming in Cobra Milk.";
   const journalismBio = "I've been working with GAYLETTER since 2016.";
@@ -14,10 +17,15 @@ const LeftColumn = ({meta}) => {
   const decideWhich = () => {
     console.log('switch activated');
     switch(meta) {
-      case 'general':
+      case 'about':
         setText(generalBio);
-        setWhichMeta('General');
-        console.log('general bio set');
+        setWhichMeta('About');
+        console.log('about bio set');
+        break;
+      case 'welcome':
+        setText(welcomeMessage);
+        setWhichMeta('Welcome');
+        console.log('welcome message set');
         break;
       case 'poetry':
         setText(poetryBio);
@@ -35,7 +43,7 @@ const LeftColumn = ({meta}) => {
         console.log('programming bio set');
         break;
       default:
-        setText(generalBio);
+        setText(welcomeMessage);
         break;
     }
   }

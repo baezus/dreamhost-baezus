@@ -27,24 +27,32 @@ function App() {
       <footer className="footer is-pulled-left">
       <div className="field is-grouped">
           <p className="control">
+            <button 
+              className="button is-rounded is-medium is-size-6-mobile" 
+              onClick={() => {setMeta('welcome')}}>welcome</button>
+          </p>
+          <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-7-mobile" 
-              onClick={()=>{setMeta('general')}}>general</button>
+              className="button is-rounded is-medium is-size-6-mobile" 
+              onClick={()=>{setMeta('about')}}>about</button>
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-7-mobile"
-              onClick={()=> {setMeta('poetry')}}>poetry</button>
+              className="button is-rounded is-medium is-size-6-mobile" 
+              onClick={() => {setMeta('programming')}}>programming</button>
             </p>
+
+            </div>
+            <div className="field is-grouped">
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-7-mobile" 
+              className="button is-rounded is-medium is-size-6-mobile" 
               onClick={() => {setMeta('journalism')}}>journalism</button> 
             </p>
             <p className="control">
               <button 
-              className="button is-rounded is-medium is-size-7-mobile" 
-              onClick={() => {setMeta('programming')}}>programming</button>
+              className="button is-rounded is-medium is-size-6-mobile"
+              onClick={()=> {setMeta('poetry')}}>poetry</button>
             </p>
       </div>
     </footer>

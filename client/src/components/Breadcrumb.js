@@ -10,7 +10,7 @@ const Breadcrumb = ({meta}) => {
   const metaValue = () => {
     let trueValue = meta;
     switch (trueValue) {
-      case 'general':
+      case 'about':
         setUlArray(['github','linkedin','instagram'])
         setUlLinks(['//www.github.com/baezus', '//www.linkedin.com/in/baezus/', '//www.instagram.com/baez.us/?hl=en'])
         break;
@@ -41,16 +41,16 @@ const Breadcrumb = ({meta}) => {
         <ul className="metaBio_links">
           <li><a 
           href={ulLinks[0]} 
-          className="is-size-5" 
+          className="is-size-6" 
           target="_blank"
           rel="noreferrer">{ulArray[0]}</a></li>
           <li><a 
           href={ulLinks[1]} 
-          className="is-size-5" 
+          className="is-size-6" 
           target="_blank"
           rel="noreferrer">{ulArray[1]}</a></li>
           <li><a href={ulLinks[2]}
-          className="is-size-5" 
+          className="is-size-6" 
           target="_blank"
           rel="noreferrer">{ulArray[2]}</a></li>
         </ul>
