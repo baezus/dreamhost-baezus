@@ -44,10 +44,19 @@ div.message-body.is-size-5.is-clickable:hover {
 button.button.is-rounded {
   font-weight: 800;
   text-shadow: 3px 2px 6px $five;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 button.button.is-rounded:hover {
   text-shadow: 3px 2px 6px $five;
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 button.button.is-rounded:focus {
@@ -83,12 +92,20 @@ a.is-size-5 {
   text-shadow: 4px 4px 8px $one;
   font-weight: xx-large;
   font-size: larger;
-
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 a.is-size-5:hover {
   text-shadow: 2px 2px $one;
   font-weight: x-large;
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -o-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  transform: scale(1.10);
 }
 
 nav.level {
