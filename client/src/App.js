@@ -1,20 +1,10 @@
 import './styles/App.scss';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <nav className="level">
-        <div className="level-left">
-          <div className="level-item">
-             elias baez
-          </div>
-        </div>
-        <div className="level-right">
-          <div className="level-item">
-            elias@baez.us
-          </div>
-        </div>
-      </nav>
+      <Header/>
       <div className="columns">
         <div className="column is-half">
           First Column
