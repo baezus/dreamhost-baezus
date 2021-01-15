@@ -20,9 +20,10 @@
 
 div.columns {
   min-height: 60vh;
-  animation: first-animation 1.5s, another-animation 1s;
+  animation: first-animation 1s, another-animation 1s;
   animation-name: bio_text;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
+  margin-top: .5em;
 }
 
 h1 {
@@ -44,10 +45,13 @@ div.message-body.is-size-5.is-clickable:hover {
 button.button.is-rounded {
   font-weight: 800;
   text-shadow: 3px 2px 6px $five;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  padding: .75em;
+  margin: 1.5em;
+  align-self: left;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
 }
 
 button.button.is-rounded:hover {
@@ -70,11 +74,11 @@ button.button.is-rounded.is-size-5-mobile.is-pulled-right {
   color: $three;
   font-size: 1.10em;
   display: block;
-  text-shadow: -1px -1px 10px $five;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  text-shadow: -3px 5px 15px $five;
+  -webkit-transition: .75s ease-in-out;
+  -moz-transition: .75s ease-in-out;
+  -o-transition: .75s ease-in-out;
+  transition: .75s ease-in-out;
 }
 
 button.button.is-rounded.is-size-5-mobile.is-pulled-right.grow:hover {
@@ -82,9 +86,9 @@ button.button.is-rounded.is-size-5-mobile.is-pulled-right.grow:hover {
   text-shadow: -1px -1px 3px $three;
   filter: drop-shadow(5px 5px 20px $one);
   // font-size: 1.5em;
-  -webkit-transform: scale(1.6) translateX(-3em) translateY(-.8em);
-  -ms-transform: scale(1.6) translateX(-3em) translateY(-.8em);
-  transform: scale(1.6) translateX(-3em) translateY(-.8em);
+  -webkit-transform: scale(1.5) translateX(-2.0em) translateY(-.5em);
+  -ms-transform: scale(1.5) translateX(-2.0em) translateY(-.5em);
+  transform: scale(1.5) translateX(-2.0em) translateY(-.5em);
   
 }
 
@@ -92,20 +96,20 @@ a.is-size-5 {
   text-shadow: 4px 4px 8px $one;
   font-weight: xx-large;
   font-size: larger;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
 }
 
 a.is-size-5:hover {
-  text-shadow: 2px 2px $one;
+  text-shadow: 2px 3px $one;
   font-weight: x-large;
-  -webkit-transform: scale(1.10);
-  -moz-transform: scale(1.10);
-  -o-transform: scale(1.10);
-  -ms-transform: scale(1.10);
-  transform: scale(1.10);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 nav.level {
@@ -113,17 +117,18 @@ nav.level {
 }
 
 footer.footer {
-  display: block;
+  // display: inline-block;
   position: absolute;
-  bottom: 0;
+  bottom: 6em;
+  left: 7em;
 }
 
 article.message.is-small {
   display: block;
   position: absolute;
-  bottom: 13em;
-  max-width: 60%;
-  min-height: 25%;
+  bottom: 30em;
+  max-width: 55%;
+  min-height: 20%;
   text-shadow: 2px 2px $one;
   font-weight: x-large;
 }
