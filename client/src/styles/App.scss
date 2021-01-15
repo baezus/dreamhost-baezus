@@ -8,7 +8,7 @@
 }
 
 .App {
-  background: radial-gradient(farthest-corner at 0px 15px, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $fireThree, $earthOne);
+  background: radial-gradient(farthest-corner at 0px 15px, $one, $one, $one, $one, $three, $one, $one);
   min-height: 100vh;
   font-weight: 600;
   font-size: 1.25em;
@@ -26,11 +26,24 @@ div.columns {
 }
 
 button.button.is-rounded {
-  font-weight: 700;
+  font-weight: 800;
+  text-shadow: 2px 1px $five;
+}
+
+button.button.is-rounded:hover {
+  text-shadow: 3px 2px $five;
+}
+
+button.button.is-rounded:focus {
+  text-shadow: 3px 1px $five;
+}
+
+a.is-size-6 {
+  text-shadow: 1px 2px $five;
 }
 
 nav.level {
-  color: $earthFour;
+  color: $four;
 }
 
 footer.footer {
@@ -48,11 +61,11 @@ article.message.is-small {
 }
 
 img.image.is-rounded {
-  filter: drop-shadow(7px 3px 7px $earthOne);
+  filter: drop-shadow(7px 3px 7px $one);
 }
 
 p.bio_body {
-  color: whitesmoke;
+  color: $four;
   animation: first-animation 1.5s, another-animation 1s;
   animation-name: bio_text;
   animation-duration: 1.5s;

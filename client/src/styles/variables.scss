@@ -1,43 +1,51 @@
-$earthOne: #2b2821;
-$earthTwo: #624c3c;
-$earthThree: #d9ac8b;
-$earthFour: #e3cfb4;
-$earthFive: #b1a58d;
-$skyOne: #243d5c;
-$skyTwo: #5d7275;
-$skyThree: #5c8b93;
-$fireOne: #b03a48;
-$fireTwo: #d4804d;
-$fireThree: #292831;
-$grass: #3e6958;
+$one: #1f2f49;
+$two: #ffce8d;
+$three: #f95142;
+$four: #f3ede3;
+$five: #1e1610;
+$six: #d3ad8b;
+$seven: #ff8f46;
+$eight: #f2bb4e;
+$nine: #84a3a5;
+$ten: #4d7c71;
+$eleven: #405987;
 
-
-$link: $fireTwo;
 
 //Customizing Variables
 $column-gap: 1.5em;
-$body-color: whitesmoke;
-$title-color: whitesmoke;
+$body-color: $four;
+$title-color: $two;
 $footer-background-color: transparent;
 $footer-padding: 1rem .25rem 2rem;
 $font: 'Varta', sans-serif;
 
 
 //buttons
-$button-color: $fireOne;
+$button-color: $four;
 $button-background-color: transparent;
 $button-border-color: transparent;
 $button-border-width: .20rem;
-$button-hover-color: $earthThree;
+$button-hover-color: $two;
 $button-hover-border-color: transparent;
-$button-focus-color: $skyTwo;
+$button-focus-color: $two;
 $button-focus-border-color: transparent;
 $button-focus-box-shadow-size: 0;
-$button-active-color: $skyThree;
+$button-active-color: $seven;
 $button-active-border-color: transparent;
 
 //message box
 $message-background-color: transparent;
 $message-radius: 10px;
-$message-body-color: $earthFour;
-$message-body-border-color: $earthTwo;
+$message-body-color: $four;
+$message-body-border-color: $two;
+
+//breadcrumbs
+$link: $four;
+$link-hover-color: $two;
+$link-hover-border: $one;
+$link-focus: $one;
+$link-focus-border: $one;
+$link-active: $ten;
+$link-active-border: $eleven;
+$breadcrumb-item-color: $four;
+$breadcrumb-item-hover-color: $two;
