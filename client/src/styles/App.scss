@@ -25,26 +25,31 @@ div.columns {
   animation-duration: 1.5s;
 }
 
+div.level-item {
+  color: transparent;
+}
+
 button.button.is-rounded {
   font-weight: 800;
-  text-shadow: 2px 2px $five;
+  text-shadow: 4px 3px 8px $five;
 }
 
 button.button.is-rounded:hover {
-  text-shadow: 2px 2px $five;
+  text-shadow: 4px 3px 8px $five;
 }
 
 button.button.is-rounded:focus {
-  text-shadow: 2px 1px $five;
+  text-shadow: 4px 3px 8px $five;
 }
 
 a.is-size-5 {
-  text-shadow: 2px 2px $five;
-  font-weight: x-large;
+  text-shadow: 4px 4px 8px $one;
+  font-weight: xx-large;
+  font-size: larger;
 }
 
 a.is-size-5:hover {
-  text-shadow: 2px 2px $five;
+  text-shadow: 2px 2px $one;
   font-weight: x-large;
 }
 

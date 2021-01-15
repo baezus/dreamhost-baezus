@@ -4,14 +4,14 @@ import React, { useEffect, useState } from 'react';
 const Breadcrumb = ({meta}) => {
 
   const [whichOne, setWhichOne] = useState(meta);
-  const [ulArray, setUlArray] = useState(['github','linkedin','instagram'])
+  const [ulArray, setUlArray] = useState(['GitHub','LinkedIn','Instagram'])
   const [ulLinks, setUlLinks] = useState(['//www.github.com/baezus', '//www.linkedin.com/in/baezus/', '//www.instagram.com/baez.us/?hl=en']);
 
   const metaValue = () => {
     let trueValue = meta;
     switch (trueValue) {
       case 'about':
-        setUlArray(['github','linkedin','instagram'])
+        setUlArray(['GitHub','LinkedIn','Instagram'])
         setUlLinks(['//www.github.com/baezus', '//www.linkedin.com/in/baezus/', '//www.instagram.com/baez.us/?hl=en'])
         break;
       case 'poetry':
